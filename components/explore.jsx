@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   const [pickupLocation, setPickupLocation] = useState("");
@@ -56,10 +57,10 @@ const Explore = () => {
 
   return (
     <>
-      <h1 className="text-5xl text-white text-center tracking-2 pt-5 pb-5 font-bold text-gray-800">
+      <h1 className="text-5xl text-white text-center tracking-2 pt-10 pb-10 font-bold text-gray-800">
         Exploration Package
       </h1>
-      <div className="flex justify-center  items-center h-screen bg-green-300">
+      <div className="flex justify-center  items-center ">
         <div className="code-container bg-white p-8 rounded-3xl shadow-md">
           <input
             type="text"
@@ -124,15 +125,15 @@ const Explore = () => {
           </button>
 
           {travelTime && (
-            <div className="travel-time mt-4 font-bold text-gray-700">
-              Estimated Travel Time: {travelTime} hours
-            </div>
+           <div className="travel-time mt-4 font-bold text-gray-700">
+           Estimated Travel Time: {travelTime} hours
+         </div>
           )}
 
           {showPopup && (
-            <div className="popup mt-4 px-8 py-4 bg-blue-500 text-white rounded-md shadow-md text-lg text-center">
-              Thanks for Choosing Us! Proceed to Driver Booking 
-            </div>
+          <Link to="/pay" ><div className="popup mt-4 px-8 py-4 bg-blue-500 text-white rounded-md shadow-md text-lg text-center">
+          Thanks for Choosing Us! Proceed to Driver Booking 
+        </div></Link> 
           )}
         </div>
       </div>
