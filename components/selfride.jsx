@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Self = () => {
   const [pickupLocation, setPickupLocation] = useState("");
@@ -8,6 +9,7 @@ const Self = () => {
   const [numberOfLuggages, setNumberOfLuggages] = useState("");
   const [numberOfFoodBreaks, setNumberOfFoodBreaks] = useState("");
   const [intermediatelocation, setVia] = useState("");
+ 
   const [showPopup, setShowPopup] = useState(false);
 
   const handlePickupLocationChange = (event) => {
@@ -20,7 +22,6 @@ const Self = () => {
   const handleViaChange = (event) => { 
     setVia(event.target.value);
   }; 
-
   const handleNumberOfPeopleChange = (event) => {
     setNumberOfPeople(event.target.value);
   };
@@ -29,7 +30,9 @@ const Self = () => {
     setNumberOfLuggages(event.target.value);
   };
 
- 
+  const handleNumberOfFoodBreaksChange = (event) => {
+    setNumberOfFoodBreaks(event.target.value);
+  };
 
   const handleStartJourney = () => {
     if (
@@ -51,17 +54,17 @@ const Self = () => {
       setNumberOfPeople("");
       setNumberOfLuggages("");
       setNumberOfFoodBreaks("");
-     setVia("");
+     
       setShowPopup(true);
     }
   };
 
   return (
     <>
-      <h1 className="text-5xl text-white text-center tracking-2 pt-5 pb-5 font-bold text-gray-800">
-       Book Ride for Yourself
+      <h1 className="text-5xl text-white text-center tracking-2 pt-10 pb-5 font-bold text-gray-800">
+       Book A Ride For Yourself
       </h1>
-      <div className="flex justify-center  items-center h-screen bg-green-300">
+      <div className="flex justify-center  items-center">
         <div className="code-container bg-white p-8 rounded-3xl shadow-md">
           <input
             type="text"
@@ -100,7 +103,13 @@ const Self = () => {
             onChange={handleNumberOfLuggagesChange}
             className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md"
           />
-          
+          <input
+            type="number"
+            placeholder="Number of Food Breaks"
+            value={numberOfFoodBreaks}
+            onChange={handleNumberOfFoodBreaksChange}
+            className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md"
+          />
           <button
             onClick={handleStartJourney}
             className="w-full px-4 py-2 bg-orange-500 text-white border-none rounded-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-orange-600 hover:translate-y-[-2px] hover:shadow-md"
@@ -115,9 +124,9 @@ const Self = () => {
           )}
 
           {showPopup && (
-            <div className="popup mt-4 px-8 py-4 bg-blue-500 text-white rounded-md shadow-md text-lg text-center">
-              Thanks for Choosing Us! Proceed to Driver Booking 
-            </div>
+            <Link to="/pay" ><div className="popup mt-4 px-8 py-4 bg-blue-500 text-white rounded-md shadow-md text-lg text-center">
+            Thanks for Choosing Us! Proceed to Driver Booking 
+          </div></Link> 
           )}
         </div>
       </div>
