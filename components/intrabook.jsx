@@ -32,7 +32,7 @@ const IntraBooking =()=> {
             </p>
             
           
-          <Link to="/self"><button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
+          <Link to="/self"><button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
             
           Proceed to Booking</button> 
 </Link>  
@@ -56,7 +56,7 @@ const IntraBooking =()=> {
             </p>
             
           
-          <Link to="/specialcare"><button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
+          <Link to="/specialcare"><button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
             
           Proceed to Booking </button> 
 </Link>  
@@ -80,7 +80,7 @@ const IntraBooking =()=> {
             </p>
             
           
-          <Link to="/contact"><button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
+          <Link to="/contact"><button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
             
           Proceed to Booking</button> 
 </Link>  
@@ -105,7 +105,7 @@ const IntraBooking =()=> {
             <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
            Book a ride for your elderly. We will make sure that they have a comfortable and safe journey.
             </p>
-        <Link to="/specialcare"> <button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+        <Link to="/specialcare"> <button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
               Proceed to Booking
             </button></Link>
           </div>
