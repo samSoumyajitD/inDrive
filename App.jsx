@@ -7,6 +7,8 @@ import Explore from "./components/explore.jsx";
 import Pick from "./components/pickndrop";
 import Self from "./components/selfride";
 import Minor from "./components/Minor";
+import Chat from './components/chat';
+import Pay from './components/Pay';
 import { BrowserRouter ,Routes, Route } from "react-router-dom";
 import IntraBooking from "./components/intrabook";
 
@@ -108,6 +110,18 @@ export default function App() {
  
 </div>
 </section>}/>
+<Route exact path="/pay" element={<section className="h-screen ">
+
+<div className="h-full bg-image ">
+  <Nav/>
+  <div className=' pl-auto pr-auto items-center justify-center'></div>
+  <Pay/>
+
+
+ 
+</div>
+</section>}/>
+<Route exact path="/chat" Component={Chat}/>
 </Routes>
 </BrowserRouter>  
 
