@@ -30,7 +30,7 @@ const Inter =()=> {
             </p>
             
           
-          <Link to="/pickndrop"><button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
+          <Link to="/pickndrop"><button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
             
           Proceed to Booking </button> 
 </Link>  
@@ -54,7 +54,7 @@ const Inter =()=> {
             <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
            Explore the city with us. We will make sure that you have a comfortable and safe journey.
             </p>
-      <Link to="/explore"> <button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+      <Link to="/explore"> <button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
         Proceed to Booking
             </button></Link> 
           </div>
