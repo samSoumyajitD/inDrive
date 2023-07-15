@@ -13,7 +13,7 @@ const Select =()=> {
     <div className="flex  pt-7  items-center justify-center ">
        
       <div className="grid grid-cols-2 pd-auto gap-10 md:grid-cols-2 lg:grid-cols-2">
-        <div className="group shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] --tw-scale-x:5  relative  cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+        <div className="group shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] --tw-scale-x:5  relative  cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
           <div className="h-96 w-72 ">
             <img
               className="h-full w-full object-cover transition-transform duration-500 rounded-lg z-[-1] group-hover:rotate-3 group-hover:scale-125"
@@ -29,7 +29,7 @@ const Select =()=> {
             </p>
             
           
-          <Link to="/intrabook"><button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
+          <Link to="/intrabook"><button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60" >
             
             Book a Ride </button> 
 </Link>  
@@ -53,7 +53,7 @@ const Select =()=> {
             <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Effortlessly reach our desired city. We will make sure that you have a comfortable and safe journey.
             </p>
-        <Link to="/intercity"><button className="rounded-full bg-green-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+        <Link to="/intercity"><button className="rounded-full bg-green-500 hover:bg-red-500 py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
               Book a Ride
             </button></Link>
           </div>
